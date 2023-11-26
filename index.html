@@ -1,0 +1,32 @@
+<html>
+    <header>
+        <title>PathFinder</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 0, user-scalable=no">
+        <link rel="stylesheet" href="index.css">
+        <script src="spt.js"></script>
+        <script src="js.js"></script>
+    </header>
+    <body>
+        <div class="app-container">
+            <div class="title">
+                <h1>Shortest Path Finder</h1>
+            </div>
+            <div class="app">
+                <div class="controllers">
+                    <button onclick="reload()">Reset</button>
+                    <button onclick="spt('dijkstra')">Dijkstra</button>
+                    <button onclick="spt('bidirectionalDijkstra')">Bidirectional Dijkstra</button>
+                    <button onclick="spt('sptStack')">SPT using a stack</button>
+                </div>
+                <div id="board">
+                </div>
+                <div id="text">
+                </div>
+                <button onclick="randomize()" id="randomize">
+                    Generate random source
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
