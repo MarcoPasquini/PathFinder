@@ -7,6 +7,9 @@ h1 {
     margin-top: 10px;
     color: rgba(77,54,208,1);
 }
+.app-container{
+    margin-bottom: 20px;
+}
 #board{
     width: 500px;
     height: 500px;
@@ -37,9 +40,22 @@ button {
     border-radius: 0.5em;
     border: 1px solid #d4d4d4;
     transition: all .3s;
-  }
-   button:active {
+}
+button:active {
     color: #666;
     box-shadow: inset 4px 4px 12px #c5c5c5,
-                inset -4px -4px 12px #ffffff;
-   }
+    inset -4px -4px 12px #ffffff;
+}
+.small-device{
+    display: none;
+    font-size: 2em;
+    margin: 50% 5%;
+}
+@media only screen and (max-width: 499px) {
+    .app-container{
+        display: none;
+    }
+    .small-device{
+        display: block;
+    }
+}
